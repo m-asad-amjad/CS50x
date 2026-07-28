@@ -11,9 +11,15 @@ If the player misses a ball, the game ends.
 Concepts Used :
 
 Variables
+
 Loops
+
 Conditionals
+
 Custom Block
+
 Events
+
 Motion
+
 Sensing
