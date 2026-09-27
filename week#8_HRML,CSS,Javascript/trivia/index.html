@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+
+            // making this function for MCQ
+            function checkCountry(content){
+               const correctPlaceholder = document.getElementById("correctCountry")
+
+              if (content.innerText != "India"){
+                content.style.background = "red";
+                correctPlaceholder.innerText = "Incorrect";
+              }
+              else {
+              content.style.background = "green";
+              correctPlaceholder.innerText = "Correct";
+            }
+        }
+
+            //making function for freeResponse
+            function checkFounder(){
+                const correctPlaceholder = document.getElementById("correctAnswer")
+                const freeResponseAnswer = document.getElementById("freeResponse")
+
+                if (freeResponseAnswer.value != "Daniel Ek"){
+                    correctPlaceholder.innerText = "Incorrect";
+                    freeResponseAnswer.style.background = "red";
+
+                } else {
+                    correctPlaceholder.innerText = "Correct";
+                    freeResponseAnswer.style.background = "green";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <h3>Which is the most populated country of the world ?</h3>
+                <p id="correctCountry"> </p>
+                <button onclick = "checkCountry(this)"> America </button>
+                <button onclick = "checkCountry(this)"> China </button>
+                <button onclick = "checkCountry(this)"> India </button>
+                <button onclick = "checkCountry(this)"> Pakistan </button>
+
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <h3>Who is the founder of  SPOTIFY ? </h3>
+                <p id="correctAnswer"></p>
+                <form>
+                    <input id = "freeResponse" type = "text">
+                </form>
+                <button onclick="checkFounder()"> Cheeck Answer </button>
+                <hr>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>

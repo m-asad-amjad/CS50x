@@ -1,0 +1,48 @@
+HTML TAGS
+
+html
+header
+title
+body
+footer
+div
+section
+img
+nav
+head
+p
+li
+ul
+a
+link
+script
+h1
+h5
+svg
+use
+button
+
+
+Bootstrap applications are
+
+Border hero with cropped image and shadows
+Responsive left-aligned hero with image
+Columns with icons
+
+
+CSS applications are
+
+center tect alignment
+flex display
+margin of page
+width of page
+image border radius decrement
+navigation
+making text and list simpler
+
+JavaScript application
+
+implementation of dark mode
+working and changing of pages
+
+

@@ -1,0 +1,38 @@
+body{
+    width : 85% ;
+    margin : auto ;
+    background-color :
+#ADD8F7;
+}
+
+header{
+    text-align : center ;
+}
+
+nav > ul{
+    list-style : none ;
+    display : flex ;
+    gap : 30px ;
+    text-align : center ;
+    justify-content : center ;
+
+
+}
+
+nav > ul > li > a {
+    text-decoration : none ;
+    text-align : center ;
+}
+
+footer{
+    text-align : center ;
+}
+img{
+    border-radius : 50% ;
+
+}
+
+.dark-mode{
+    background-color: black !important;
+    color: white !important;
+}
